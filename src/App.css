@@ -1,0 +1,145 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  background-color: #ffff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar heading */
+.sidebar h3 {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  background-image: url("https://t4.ftcdn.net/jpg/02/94/21/87/360_F_294218701_se4mQtVmQoPnG4UX7J8PjvTzn8yeWyqF.jpg");
+  width: 900;
+  margin-left: 300px;
+  padding: 1px 16px;
+  height: 1000px;
+  text-align: center;
+  color: #ffff;
+  
+}
+.content h1,h5{
+  font-weight: bolder;
+  padding: 10px;
+  
+}
+.content h1{
+  margin-top: 300px;
+  font-size: 70px;
+}
+.content h5{
+  font-size: 40px;
+}
+.content button{
+  margin: 30px;
+}
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+  div.about {margin-left: 0;}
+  div.reviews {margin-left: 0;}
+  div.contact {margin-left: 0;}
+  div.footer {margin-left: 0;}
+}
+
+.about{
+  margin-left: 300px;
+  padding: 1px 16px;
+  text-align: center;
+}
+.about h4{
+  margin: 30px 0px 30px 0px;
+  letter-spacing: 5px;
+  color: #808080;
+}
+.about h5{
+  letter-spacing: 3px;
+}
+.about p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.email{
+  margin: 100px 10px 10px 10px;
+}
+.email h3{
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+.email input{
+  width: 400px;
+}
+.reviews{
+  background-image: url("https://images.indianexpress.com/2021/11/bigbasket.jpg");
+  height: 300px;
+  margin-left: 300px;
+  padding: 1px 16px;
+  text-align: center;
+}
+.reviews h3{
+  margin-top: 120px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffff;
+}
+.reviews input{
+  margin: 40px 60px 0px 60px;
+  align-content: center;
+  background-color: #a5958088;
+  text-align: center;
+  height: 60px;
+}
+.contact{
+  margin-left: 300px;
+  padding: 1px 16px;
+  text-align: center;
+}
+.contact h5{
+  margin-top: 50px;
+  color: gray;
+  letter-spacing: 5px;
+}
+.contact h4{
+  margin-top: 50px;
+}
+.contact p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.contact span{
+  color: #ac7a68;
+}
+.footer{
+  margin-left: 300px;
+  padding: 1px 16px;
+  text-align: center;
+}
+.foot{
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+.chat{
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
